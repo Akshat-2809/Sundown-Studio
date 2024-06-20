@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:600px) {
+        .main-page{
+            min-height: 100vh;
+            width: 100vw;
+            position: relative;
+            padding: 0vw 0vw;
+        }
+        nav>img{
+            width: 9vh;
+            transition: all ease 0.2s;
+        }
+        .main-page video{
+            width: 92%;
+            border-radius:15px;
+            height: 59vh;
+            object-fit: cover;
+            object-position: center;
+            margin-left: 4%;
+            position: relative;
+        }
+        nav {
+            padding: 8vw 5vw;
+            background-color: #EFEAE3;
+        }
+        nav h3{
+            display: block;
+            padding: 3vw 5vw;
+            border: 1px solid #ababab;
+            border-radius: 50px;
+            font-size: 4vw;
+            font-weight: 200;
+            padding-left: 5vw;
+            
+        }
+        .nav-buttons {
+            display: none;
+        }
+        .center {
+            height: 65vh;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-bottom: 1px solid #0000003c;
+            padding-bottom: 5vw;
+            flex-direction: column-reverse;
+            padding: 8vw 5vw;
+            position: relative;
+            z-index: 9;
+        }
+        .details h3 {
+            width: 80%;
+            font-size: 5.8vw;
+            line-height: 7vw;
+        
+        }
+        .heading h1{
+            font-size: 17vw;
+            line-height: 14vw;
+            text-align: right;
+            
+        }
+        .orange-animation{
+            position: absolute;
+            height: 77vw;
+            width: 70vw;
+            right: 0;
+            top:65.5vh;
+        }
+        .orange-circle{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: #fe320a;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            filter: blur(20px);
+        }
+        .aboutus{
+            height: 23vh;
+            width: 100%;
+            position: relative;
+        }
+        .aboutus h1{
+            font-size:13vw ;
+        }
+        .orange-circle-aboutus{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            margin: 0.5vw 1vw;
+            background-color: #fe320a;
+        }
+        .container>h1, .orange-circle-aboutus,.container{
+            white-space: nowrap;
+            display: inline-block;
+            margin-top: 4vw;
+        }
+        .marque{
+            white-space: nowrap;
+            overflow-x:auto ;
+        }
+        .marque::-webkit-scrollbar{
+                display: none;
+        }
+        .container{
+            animation-name:textMove;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .aboutus-2{
+            height: 85vh;
+            width: 100vw;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            z-index: 9;
+            padding: 0vw 3.3vw;
+        }
+        .paradiv{
+            width: 90%;
+            height: 50%;
+            line-height: 1.1;
+            margin-left: 3%;
+        }
+        .paradiv h2{
+            font-size: 9vw;
+        }
+        .paradiv>h3{
+            margin-top: 20%;
+            font-size: 5vw;
+        }
+        .aboutus-2 .orange-circle3{
+            height: 63vw;
+            width: 63vw;
+            background-color: #fe320a;
+            border-radius: 50%;
+            position: absolute;
+            top: 44%;
+            left: 25%;
+            filter: blur(30px);
+            animation-name: animation2;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .imageText{
+            height: 50%;
+            width: 76%;
+            margin-top: 1%;
+            position: relative;
+            z-index: 9;
+        }
+        .imageText>img{
+            width: 84%;
+            border-radius: 30px;
+            padding: 10px 10px;
+        }
+        .imageText>p{
+            width: 93%;
+            position: relative;
+            z-index: 9;
+            font-size: 3.5vw;
+            line-height: 1.2;
+        }
+        .loader>h1{
+            font-size:12vw ;
+        }
+    }
+

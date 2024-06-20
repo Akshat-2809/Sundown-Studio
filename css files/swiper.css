@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.swiper {
+    width: 60%;
+    height: 66%;
+    left: 0%;
+    margin-top: 5%;
+}
+.swiper-slide {
+    width: 30%;
+    border-left: 1px solid #aeadad;
+    border-right: 1px solid #aeadad;
+    padding: 0vw 2vw;
+}
+.our-work h3{
+    width: 20vw;
+    height: 10vh;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 20px 20px;
+    margin-left: 2vw;
+}
+.our-work h3 i{
+    color: orangered;
+    font-size: 1.2vw;
+}
+.swiper-slide p{
+    width: 50vw;
+    padding: 1vw 1vw;
+    height: 13vh;
+    font-size: 1.5vw;
+    margin-top: 1.4vw;
+    line-height: 1.4;
+    text-align: center;
+}
+#north img{
+    width:11vw;
+}
+

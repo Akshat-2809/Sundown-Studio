@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.main {
+    position: relative;
+    z-index: 10;
+}
+.main-page {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw;
+}
+.main-page video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 3.5vw;
+    position: relative;
+}
+nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+}
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.nav-buttons h4 {
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+.nav-buttons h4::after, .projects h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.nav-buttons h4:hover::after, .projects h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+.nav-buttons h4 a, .projects h4 a  {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+.nav-buttons h4:hover a, .projects h4:hover a {
+    color: #fff;
+}
+nav h3 {
+    display: none;
+}
+.center {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+.details h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+.heading h1{
+    font-size: 9.5vw;
+    line-height: 8vw;
+    text-align: right;
+}
+.orange-animation{
+    position: absolute;
+    height: 36vw;
+    width: 36vw; 
+    right: 0;
+    top: 72vh;
+}
+.orange-circle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fe320a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+}
+.orange-circle1, .orange-circle2{
+    height:30vw;
+    position: absolute;
+    width: 30vw;
+    background-color: #fe320a;
+    filter: blur(20px);
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.orange-circle2{
+   animation-name: animation1;
+}
+.orange-circle1{
+    animation-name: animation2;
+}
+.aboutus{
+    height: 36vh;
+    width: 100%;
+    font-size: 3.8vw;
+    position: relative;
+}
+.orange-circle-aboutus{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0.5vw 1vw;
+    background-color: #fe320a;
+}
+.container>h1, .orange-circle-aboutus,.container{
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 2vw;
+}
+.marque{
+    white-space: nowrap;
+    overflow-x:auto ;
+}
+.marque::-webkit-scrollbar{
+        display: none;
+}
+.container{
+    animation-name:textMove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.aboutus-2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 12vw;  
+    position: relative;
+    z-index: 9;
+}
+.paradiv{
+    width: 50%;
+    height: 50%;
+    line-height: 1;
+    margin-left: 3%;
+    font-size: 3vw;
+}
+.paradiv>h3{
+    margin-top: 25%;
+    font-size: 1.5vw;
+}
+.imageText{
+    height: 50%;
+    width: 30%;
+    margin-top: 15%;
+}
+.imageText>img{
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+.imageText>p{
+    margin-top: 5%;
+    width: 85%;
+    font-size: 1.4vw;
+    line-height: 1.5;
+    padding: 10px 10px;
+}
+.projects{
+    height: 110vh;
+    width: 100vw;
+    padding: 20px 20px;
+}
+.elem{
+    height: 105px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    justify-content: space-between;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+.elem h1{
+    position: relative;
+    z-index: 9;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    background-color: orange;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+.elem:hover .overlay{
+    top: 0%;
+}
+.projects>h4{
+    width: 15%;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 1px solid #0000003c;
+    font-size: 1.5vw;
+    margin-top: 3%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.projects>h4>a{
+    text-decoration:none ;
+    color: #000;
+    font-weight: 400;
+}
+.elem>.right-details h2{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.elem>.right-details h3{
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+.fixed-image{
+    height: 45vh;
+    width: 22vw;
+    position: fixed;
+    z-index: 99;
+    border-radius: 20px;
+    top: 25%;
+    left: 49%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+.info{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.design{
+    height: 90%;
+    width: 40%;
+    background-color: #000;
+    padding: 20px 20px;
+    position: relative;
+    left: 5%;
+}
+.design-image{
+    height: 90%;
+    overflow: hidden;
+    width: 55%;
+}
+.our-work{
+    height: 80vh;
+    width: 100%;
+    padding:8vw 2vw;
+}
+.ending-page{
+    height: 100vh;
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    background-color: #000;
+    color:#fff;
+    z-index: 9;
+    height: 90vh;
+    width: 100vw;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1vw 3vw;
+}
+.fcontainer{
+    display: flex;
+    align-items: center;
+}
+.left-footer{
+    width: 50%;
+    height: 16vh;
+    position: relative;
+    margin-left: 2%;
+}
+.right-footer{
+    height: 10vh;
+    font-size: 1.5vw;
+    position: relative;
+}
+.full-screen{
+    height: 100vh;
+    width: 100%;
+    background-color: #00000070;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+.screen-menu{
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}

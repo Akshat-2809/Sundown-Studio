@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.main-page ,.aboutus,.aboutus-2,.projects,.info,.our-work,.screen-menu{
+    background-color: #EFEAE3; 
+}
+@keyframes animation1 {
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+        transform: translate(0%,-10%);
+    }
+}
+@keyframes animation2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,20%);
+    }
+}
+@keyframes textMove {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.aboutus-2 .orange-circle3{
+    height: 25vw;
+    width: 25vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    position: absolute;
+    top: 44%;
+    left: 25%;
+    filter: blur(50px);
+    animation-name: animation2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.elem>.right-details h2, .right-details h3{
+    position: relative;
+    z-index: 9;
+    text-align: right;
+}
+.design, .design-image{
+    border-radius: 10px;
+}
+.design-image img{
+    width: 98%;
+    padding: 0px 20px;
+}
+.design-inner h2{
+    font-size: 4.3vw;
+    color: #dadada69;
+}
+.design-inner{
+    gap: 10px;
+    border-left: 1px solid #dadada69;
+    padding: 0px 12px;
+    height: 30%;
+    width: 60%;    
+    margin-left: 20%;
+    margin-top: 20%;
+}
+.design p{
+    font-size: 1.2vw;
+    color: #ffffffc5;
+    margin-top: 10%;
+    width: 65%;
+    margin-left: 20%;
+}
+.footer h1{
+    font-size: 15vw;
+}
+.left-footer>h4>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.2vw;
+}
+.footer>h1{
+    text-align: center;
+    border-bottom: 2px solid #dadada69;
+}
+
+.email-input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+    flex: 1;
+}
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.submit-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.submit-button span {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.submit-button:hover span {
+    transform: translateX(5px);
+}
+.orange-ainmation-footer{
+    height: 65vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #fe320a;
+    top: 0%;
+    left: 0%;
+    filter: blur(40px);
+    border-radius: 2vw;
+}
