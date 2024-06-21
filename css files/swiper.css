@@ -17,7 +17,9 @@ html, body {
     width: 30%;
     border-left: 1px solid #aeadad;
     border-right: 1px solid #aeadad;
-    padding: 0vw 2vw;
+    border-top: 1px solid #aeadad;
+    border-bottom: 1px solid #aeadad;
+    padding: 1vw 2vw;
 }
 .our-work h3{
     width: 20vw;
@@ -42,6 +44,6 @@ html, body {
     text-align: center;
 }
 #north img{
-    width:11vw;
+    width:10vw;
 }
 
