@@ -19,7 +19,8 @@ html, body {
     border-right: 1px solid #aeadad;
     border-top: 1px solid #aeadad;
     border-bottom: 1px solid #aeadad;
-    padding: 1vw 2vw;
+    padding: 2.3vw 2vw;
+    border-radius: 20px;
 }
 .our-work h3{
     width: 20vw;

@@ -122,12 +122,11 @@ html, body {
     transform: translateX(5px);
 }
 .orange-ainmation-footer{
-    height: 65vh;
+    height: 67vh;
     width: 100vw;
-    position: absolute;
+    position: relative;
     background-color: #fe320a;
     top: 0%;
     left: 0%;
     filter: blur(40px);
-    border-radius: 2vw;
 }
